@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterViewController" customModule="AFProduction" customModuleProvider="target">
+            <connections>
+                <outlet property="btnContinue" destination="9YP-Bc-cyX" id="Egl-1R-yJd"/>
+                <outlet property="lblTitle" destination="p1i-g5-gjI" id="Lxv-qt-gR6"/>
+                <outlet property="tfCity" destination="PSt-OC-Z7T" id="muq-MM-UjY"/>
+                <outlet property="tfRegion" destination="gUV-jO-zQf" id="WsO-pG-f2o"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1i-g5-gjI">
+                    <rect key="frame" x="94.5" y="242" width="186" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="uxV-q4-zLv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-Bc-cyX">
+                    <rect key="frame" x="68.5" y="371" width="238" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="238" id="TKI-YF-HrW"/>
+                        <constraint firstAttribute="height" constant="22" id="kzl-cj-8bW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <state key="normal" title="Продолжить"/>
+                    <connections>
+                        <action selector="onClickContinue:" destination="-1" eventType="touchUpInside" id="ewT-6z-b7l"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSt-OC-Z7T">
+                    <rect key="frame" x="68.5" y="325" width="238" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1V3-tG-SAe"/>
+                        <constraint firstAttribute="width" constant="238" id="Zcc-Jt-n2d"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gUV-jO-zQf">
+                    <rect key="frame" x="69" y="278" width="238" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3mW-zT-wBC"/>
+                        <constraint firstAttribute="width" constant="238" id="Xr9-LV-Imm"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p1i-g5-gjI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AR7-58-Art"/>
+                <constraint firstItem="9YP-Bc-cyX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B0s-Q4-JXV"/>
+                <constraint firstItem="gUV-jO-zQf" firstAttribute="top" secondItem="p1i-g5-gjI" secondAttribute="bottom" constant="11" id="Lpq-vD-7JH"/>
+                <constraint firstItem="p1i-g5-gjI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="242" id="Sng-H8-h5t"/>
+                <constraint firstItem="PSt-OC-Z7T" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WTV-cU-0KL"/>
+                <constraint firstItem="PSt-OC-Z7T" firstAttribute="top" secondItem="gUV-jO-zQf" secondAttribute="bottom" constant="17" id="eSV-WE-Kbe"/>
+                <constraint firstItem="gUV-jO-zQf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nXi-5x-W7k"/>
+                <constraint firstItem="9YP-Bc-cyX" firstAttribute="top" secondItem="PSt-OC-Z7T" secondAttribute="bottom" constant="16" id="pat-hW-oME"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
