@@ -24,6 +24,15 @@ class MenuTViewController: UITableViewController
     {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "MenuTableViewCell")
+        
+
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        self.view.backgroundColor = UIColor.clear
+        self.navigationItem.setHidesBackButton(true, animated:true);
+        self.navigationItem.addLogoAtLeftButton()
+        self.navigationItem.addSettingButtonOnRight()
     }
 
     override func didReceiveMemoryWarning() {

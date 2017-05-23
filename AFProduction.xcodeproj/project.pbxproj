@@ -17,6 +17,7 @@
 		84541CC41ECED3B400AED46F /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84541CC21ECED3B400AED46F /* EnterViewController.swift */; };
 		84541CC51ECED3B400AED46F /* EnterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84541CC31ECED3B400AED46F /* EnterViewController.xib */; };
 		8457C67D1ED1DB0200AD64EA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457C67C1ED1DB0200AD64EA /* MenuItem.swift */; };
+		8457C6801ED3BFC100AD64EA /* NavigationItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457C67F1ED3BFC100AD64EA /* NavigationItemExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		84541CC21ECED3B400AED46F /* EnterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterViewController.swift; path = Controllers/EnterViewController.swift; sourceTree = "<group>"; };
 		84541CC31ECED3B400AED46F /* EnterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EnterViewController.xib; path = Controllers/EnterViewController.xib; sourceTree = "<group>"; };
 		8457C67C1ED1DB0200AD64EA /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuItem.swift; path = Models/API/MenuItem.swift; sourceTree = "<group>"; };
+		8457C67F1ED3BFC100AD64EA /* NavigationItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItemExtension.swift; path = Extensions/NavigationItemExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		8440BD601EC7137900F74F71 /* AFProduction */ = {
 			isa = PBXGroup;
 			children = (
+				8457C67E1ED3BF9700AD64EA /* Extensions */,
 				84541CBC1ECECDE100AED46F /* Cells */,
 				84541CAB1EC87B5300AED46F /* Controllers */,
 				84541CAA1EC87B4300AED46F /* Views */,
@@ -126,6 +129,14 @@
 				8457C67C1ED1DB0200AD64EA /* MenuItem.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		8457C67E1ED3BF9700AD64EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8457C67F1ED3BFC100AD64EA /* NavigationItemExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8457C6801ED3BFC100AD64EA /* NavigationItemExtension.swift in Sources */,
 				84541CB21EC87C6600AED46F /* MenuTViewController.swift in Sources */,
 				84541CC41ECED3B400AED46F /* EnterViewController.swift in Sources */,
 				8440BD621EC7137900F74F71 /* AppDelegate.swift in Sources */,
